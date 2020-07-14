@@ -1,0 +1,164 @@
+body{
+  margin: 0;
+padding: 0;
+    font-family: 'Roboto', sans-serif;  
+}
+*{
+    box-sizing: border-box;
+}
+.container{height: 118px;
+    width: 1170px;
+    overflow: hidden;
+    margin: auto;
+}
+header{margin-top: 0;
+    background: url(../img/Companies.jpg) center center fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.head{
+    height: 638px;
+    background: rgba(0,0,0,0.7);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: none;
+    list-style-type: none;
+  padding: 40px 15px;
+    width: 100%;    
+}
+ul li{
+    float: right;
+}
+ul li a{
+    display: block;
+    padding: 18px 0;
+    text-decoration: none;
+    color: #fff;
+    margin-right:30px;
+    transition: ease-in-out 0.5s;
+}
+ul li a:hover{
+  color: #84D4E0;
+}
+.active{
+color:#84D4E0;
+    border-bottom: 2px solid #84D4E0;
+}
+#BYF{
+    float: left;
+    font-size: 35px;
+    font-family: 'Ranchers', cursive;
+}
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropbtn { color: white;
+    background-color:#84D4E0;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a { margin-right: 0px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #84D4E0;
+color: white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.mySlides {display: none;}
+
+section{height: 500px;
+    width: 80%;
+    margin: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+    height: inherit;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+div.comp{
+    text-align: center;
+    padding: 5px;
+    margin: 5px auto;
+}
+.company{width: 160px;
+    height: 72px;
+    margin-left: 42%;
+}
+div.comp h4{font-size:18px;
+    color: white;
+    text-align: center;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
